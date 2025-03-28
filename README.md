@@ -23,3 +23,32 @@ Features
 ✔ Scheduled execution using CloudWatch Events <br>
 ✔ Logs all execution details in CloudWatch Logs <br>
 ✔ Secure IAM Role with least privilege permissions <br>
+
+Prerequisites
+--------------
+Terraform Installed: Download Terraform<br>
+AWS CLI Installed & Configured: aws configure<br>
+AWS Account with necessary permissions <br>
+
+Setup Instructions
+--------------------
+Clone the Repository<br>
+git clone https://github.com/Jeyagomathi-lab/TerraformAutomateS3Cleanup.git<br>
+Initialize Terraform<br>
+terraform init<br>
+Modify Variables (if needed)<br>
+Update terraform.tfvars with your bucket name.<br>
+Apply Terraform Configuration<br>
+terraform apply -auto-approve
+Verify Deployment<br>
+Check AWS Lambda, IAM, and CloudWatch for created resources.<br>
+
+Future Enhancements
+------------------------
+Add logging for deleted files.<br>
+Encrypt S3 bucket data.<br>
+Integrate AWS SNS for notifications.<br>
+
+
+
+
